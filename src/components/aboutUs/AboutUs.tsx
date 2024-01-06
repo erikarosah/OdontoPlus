@@ -1,5 +1,6 @@
 import * as S from './styles';
 import ClinicImage from '../../assets/clinic.jpg';
+import ClinicImage2 from '../../assets/clinic2.jpg';
 
 export function AboutUs() {
 	return (
@@ -7,6 +8,10 @@ export function AboutUs() {
 			<S.Content>
 				<img
 					src={ClinicImage}
+					alt='OdontoPlus clinic'
+				/>
+				<S.Image
+					src={ClinicImage2}
 					alt='OdontoPlus clinic'
 				/>
 				<S.About>

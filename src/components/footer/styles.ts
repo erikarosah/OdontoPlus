@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.section`
     display: flex;
     flex-direction: column;
-    height: 40vh;
+    max-height: 40vh;
     padding: 1rem;
     color: #FFF;
     background-color: var(--var-blue);
@@ -29,6 +29,12 @@ export const Content = styled.main`
         li{
             font-weight: normal;
         }
+    }
+
+    @media(max-width: 428px) {
+        h2 {
+            display: none;
+        }        
     }
 `;
 

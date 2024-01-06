@@ -13,7 +13,7 @@ export const Container = styled.section`
 `;
 
 export const Title = styled.h2`
-   font-size: 4.5rem;
+   font-size: 3.5rem;
    color: var(--var-blue);
 `;
 

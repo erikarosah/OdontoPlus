@@ -15,7 +15,7 @@ export const Content = styled.div`
     left: 2rem;
     z-index: 1;
     
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: bold;
     letter-spacing: 1px;
     
@@ -31,7 +31,15 @@ export const Content = styled.div`
         position: absolute;
         margin-top: -10px;
     }
-}
+    
+    @media(max-width: 768px) {
+        font-size: 3.5rem;
+    }
+
+    @media(max-width: 428px) {
+        display: none;
+    }
+    }
 `;
 
 export const Banner = styled.img`

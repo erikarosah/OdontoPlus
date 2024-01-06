@@ -1,29 +1,41 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-    width: 100%;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 `;
 
 export const Content = styled.main`
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 1rem;
-    justify-content: center;
-    min-height: 140vh;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media(max-width: 1024px) {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width: 688px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 `;
 
 export const Images = styled.div`
     width: 35rem;
-    height: 23rem;
-
+    height: auto;
     display: flex;
     flex-direction: column;
 
     cursor: pointer;
 
     img {
-        width: 100%;
-        min-height: 100%;
+        width: 35rem;
+        height: 23rem;
         transition: transform 0.2s;
 
         &:hover {

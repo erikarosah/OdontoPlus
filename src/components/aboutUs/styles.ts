@@ -12,11 +12,29 @@ export const Content = styled.main`
   display: flex;
   gap: 2.5rem;
 
-  img {
+  img:first-child {
     width: auto;
     max-width: 80vh;
+
+    @media(max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  @media(max-width: 1024px) {
+    display: flex;
+    flex-direction: column-reverse;
   }
 `;
+
+export const Image = styled.img`
+  display: none;
+
+  @media(max-width: 1024px) {
+      display: flex;
+    }
+`;
+
 
 export const About = styled.div`
   width: 50%;
@@ -29,10 +47,18 @@ export const About = styled.div`
   }
 
   span {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.8rem;
     line-height: 3rem;
     color: var(--var-text);
+  
+    @media(max-width: 428px) {
+      font-size: 1.6rem;   
+    }
+  }
+
+  @media(max-width: 1024px) {
+    width: 90%;
   }
 `;
 
