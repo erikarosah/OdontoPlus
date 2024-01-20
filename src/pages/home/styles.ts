@@ -26,7 +26,7 @@ export const Content = styled.div`
         height: 3px;
         width: 15%;
         display: inline-block;
-        background-color: yellow;
+        background-color: var(--var-blue);
         
         position: absolute;
         margin-top: -10px;

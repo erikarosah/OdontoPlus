@@ -4,7 +4,7 @@ import ClinicImage2 from '../../assets/clinic2.jpg';
 
 export function AboutUs() {
 	return (
-		<S.Container>
+		<S.Container id='about-us'>
 			<S.Content>
 				<img
 					src={ClinicImage}
@@ -19,7 +19,7 @@ export function AboutUs() {
 						OdontoPlus
 					</S.Title>
 					<p>
-						Tem uma excelente estrutura clínica que garante um tratamento
+						Temos uma excelente estrutura clínica que garante um tratamento
 						para recuperação da sua saúde bucal, além de trazer de volta sua
 						autoestima e seu sorriso!
 					</p>

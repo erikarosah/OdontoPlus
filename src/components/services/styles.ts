@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-    width: 98%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
 `;
 
 export const Content = styled.main`
