@@ -1,1 +1,1 @@
-<h1>Landing page para clínica odontológica</h1>
+<h1>Site para clínica odontológica</h1>
